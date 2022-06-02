@@ -27,7 +27,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/{name?}',function($name = null){
-    $data = compact('name');
-    return view('me')->with($data);
+    $data= '<h1>Created By</h1>';
+    $bim = compact('name','data');
+    return view('me')->with($bim);
     // echo $nam;
 });

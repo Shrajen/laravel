@@ -1,3 +1,8 @@
 <h1> 
-    Welcome, {{$data}}
+    Welcome, {{$name ?? 'Guest'}}
+    {{time()}}
+    <br>
+    {{date('d-m-y')}}
+    
 </h1>
+{!! $data !!}
